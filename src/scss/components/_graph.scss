@@ -1,0 +1,152 @@
+.wrapper {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  width: 700px;
+  justify-content: space-around;
+}
+
+.graph {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  background-color: antiquewhite;
+  border-radius: 2px;
+
+  &__inner {
+    display: flex;
+  }
+  &__count-item {
+    margin-top: 10px;
+  }
+  &__schedule {
+    width: 400px;
+    margin-left: 30px;
+    background-color: white;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  &__schedule-colums {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__schedule-colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50px;
+    transition: 0.8s 0.03s ease;
+
+  }
+  &__schedule-days {
+    position: relative;
+    justify-content: space-between;
+    width: 393px;
+    align-self: flex-end;
+    display: flex;
+    margin-right: 18px;
+    top: -16px;
+  }
+
+  &__schedule-day {
+    width: 50px;
+    text-align: center;
+  }
+
+  &__description {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__description-item {
+    position: relative;
+    font-size: 10px;
+  }
+
+  &__colum {
+    width: 50px;
+    transition: 0.8s 0.03s ease;
+  }
+
+  &__colum--undefined {
+    background-color: gray;
+  }
+
+  &__colum--kids {
+    background-color: green;
+  }
+
+  &__colum--youngadult {
+    background-color: blue;
+  }
+
+  &__colum--adult {
+    background-color: darkblue;
+  }
+
+  &__colum--senior {
+    background-color: red;
+  }
+
+  &__description-item--gray::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: gray;
+    top: -2px;
+    right: 50px;
+    border-radius: 2px;
+  }
+  &__description-item--green::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: green;
+    top: -2px;
+
+    right: 25px;
+
+    border-radius: 2px;
+  }
+  &__description-item--blue::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: blue;
+    top: -2px;
+    right: 60px;
+    border-radius: 2px;
+  }
+  &__description-item--darkblue::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: darkblue;
+    top: -2px;
+    right: 30px;
+
+    border-radius: 2px;
+  }
+  &__description-item--red::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: red;
+    top: -2px;
+    right: 32px;
+    border-radius: 2px;
+  }
+}
